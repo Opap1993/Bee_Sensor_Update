@@ -1,0 +1,529 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>7.0</ProjectVersion>
+    <ToolchainName>com.Atmel.ARMGCC.CPP</ToolchainName>
+    <ProjectGuid>{6fcc8c11-094c-4e8d-821d-90d9df242911}</ProjectGuid>
+    <avrdevice>ATSAMD21E18A</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>CPP</Language>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <AssemblyName>Sketch1</AssemblyName>
+    <Name>Sketch1</Name>
+    <RootNamespace>Sketch1</RootNamespace>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <CacheFlash>true</CacheFlash>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress>0x20000000</RamSnippetAddress>
+    <UncachedRange />
+    <OverrideVtorValue>exception_table</OverrideVtorValue>
+    <BootSegment>2</BootSegment>
+    <eraseonlaunchrule>0</eraseonlaunchrule>
+    <AsfFrameworkConfig>
+      <framework-data>
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.42.0" />
+        </dependencies>
+      </framework-data>
+    </AsfFrameworkConfig>
+    <preserveEEPROM>true</preserveEEPROM>
+    <ResetRule>0</ResetRule>
+    <EraseKey />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <ArmGccCpp>
+  <armgcc.common.outputfiles.hex>True</armgcc.common.outputfiles.hex>
+  <armgcc.common.outputfiles.lss>True</armgcc.common.outputfiles.lss>
+  <armgcc.common.outputfiles.eep>True</armgcc.common.outputfiles.eep>
+  <armgcc.common.outputfiles.bin>True</armgcc.common.outputfiles.bin>
+  <armgcc.common.outputfiles.srec>True</armgcc.common.outputfiles.srec>
+  <armgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>_VMDEBUG=1</Value>
+      <Value>ARDUINO=108013</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>F_CPU=48000000L</Value>
+      <Value>printf=iprintf</Value>
+      <Value>__SAMD__</Value>
+      <Value>ARDUINO_SEEED_LORAWAN</Value>
+      <Value>ARDUINO_ARCH_SAMD</Value>
+      <Value>__SAMD21G18A__</Value>
+      <Value>USB_VID=0x2886</Value>
+      <Value>USB_PID=0x800C</Value>
+      <Value>USBCON</Value>
+      <Value>USB_CONFIG_POWER=100</Value>
+      <Value>ARM_MATH_CM0PLUS</Value>
+      <Value>SEEEDUINO_LORAWAN</Value>
+      <Value>__SAMD21__</Value>
+    </ListValues>
+  </armgcc.compiler.symbols.DefSymbols>
+  <armgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>../../../Sketch1</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/libraries/FlashStorage/src</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/libraries/LoRaWan</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/cores/arduino</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/cores/arduino/avr</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/cores/arduino/libb64</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/cores/arduino/TinyUSB</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/cores/arduino/USB</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/variants/arduino_zero</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/cores/arduino/TinyUSB/Adafruit_TinyUSB_ArduinoCore</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/cores/arduino/TinyUSB/Adafruit_TinyUSB_ArduinoCore/tinyusb/src</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/CMSIS/Core/Include/</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/CMSIS/DSP/Include/</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS-Atmel/1.2.1/CMSIS-Atmel/CMSIS/Device/ATMEL/</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/4.8.3</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/4.8.3/arm-none-eabi</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/4.8.3/bits</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/sys</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/system</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/avr</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/usb</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/lib/gcc/arm-none-eabi/4.8.3/include</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/Device/ATMEL/samd21/include/component</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0../../CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/component</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0../../CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/instance</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0../../CMSIS-Atmel/1.1.0/CMSIS/Device/ATMEL/samd21/include/pio</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/Device/ATMEL/samd21/include</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/CMSIS/include</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/Device/ATMEL/samd21/include/instance</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/Device/ATMEL/samd21/include/pio</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0../../CMSIS-Atmel/1.1.0/CMSIS/Device/ATMEL/samd21/include/component</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0../../CMSIS-Atmel/1.1.0/CMSIS/Device/ATMEL/samd21/include/instance</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/7.2.1/tr1</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/lib/gcc/arm-none-eabi/7.2.1/include</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/7.2.1/arm-none-eabi</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/7.2.1</Value>
+      <Value>{vm.intellisense.add-paths}</Value>
+    </ListValues>
+  </armgcc.compiler.directories.IncludePaths>
+  <armgcc.compiler.optimization.level>Optimize debugging experience (-Og)</armgcc.compiler.optimization.level>
+  <armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+  <armgcc.compiler.optimization.DebugLevel>Maximum (-g3)</armgcc.compiler.optimization.DebugLevel>
+  <armgcc.compiler.warnings.AllWarnings>True</armgcc.compiler.warnings.AllWarnings>
+  <armgcccpp.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>_VMDEBUG=1</Value>
+      <Value>ARDUINO=108013</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>F_CPU=48000000L</Value>
+      <Value>printf=iprintf</Value>
+      <Value>__SAMD__</Value>
+      <Value>ARDUINO_SEEED_LORAWAN</Value>
+      <Value>ARDUINO_ARCH_SAMD</Value>
+      <Value>__SAMD21G18A__</Value>
+      <Value>USB_VID=0x2886</Value>
+      <Value>USB_PID=0x800C</Value>
+      <Value>USBCON</Value>
+      <Value>USB_CONFIG_POWER=100</Value>
+      <Value>ARM_MATH_CM0PLUS</Value>
+      <Value>SEEEDUINO_LORAWAN</Value>
+      <Value>__SAMD21__</Value>
+    </ListValues>
+  </armgcccpp.compiler.symbols.DefSymbols>
+  <armgcccpp.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>../../../Sketch1</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/libraries/FlashStorage/src</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/libraries/LoRaWan</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/cores/arduino</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/cores/arduino/avr</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/cores/arduino/libb64</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/cores/arduino/TinyUSB</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/cores/arduino/USB</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/variants/arduino_zero</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/cores/arduino/TinyUSB/Adafruit_TinyUSB_ArduinoCore</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/cores/arduino/TinyUSB/Adafruit_TinyUSB_ArduinoCore/tinyusb/src</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/CMSIS/Core/Include/</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/CMSIS/DSP/Include/</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS-Atmel/1.2.1/CMSIS-Atmel/CMSIS/Device/ATMEL/</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/4.8.3</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/4.8.3/arm-none-eabi</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/4.8.3/bits</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/sys</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/system</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/avr</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/usb</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/lib/gcc/arm-none-eabi/4.8.3/include</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/Device/ATMEL/samd21/include/component</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0../../CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/component</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0../../CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/instance</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0../../CMSIS-Atmel/1.1.0/CMSIS/Device/ATMEL/samd21/include/pio</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/Device/ATMEL/samd21/include</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/CMSIS/include</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/Device/ATMEL/samd21/include/instance</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/Device/ATMEL/samd21/include/pio</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0../../CMSIS-Atmel/1.1.0/CMSIS/Device/ATMEL/samd21/include/component</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0../../CMSIS-Atmel/1.1.0/CMSIS/Device/ATMEL/samd21/include/instance</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/7.2.1/tr1</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/lib/gcc/arm-none-eabi/7.2.1/include</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/7.2.1/arm-none-eabi</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/7.2.1</Value>
+      <Value>{vm.intellisense.add-paths}</Value>
+    </ListValues>
+  </armgcccpp.compiler.directories.IncludePaths>
+  <armgcccpp.compiler.optimization.level>Optimize debugging experience (-Og)</armgcccpp.compiler.optimization.level>
+  <armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>
+  <armgcccpp.compiler.optimization.DebugLevel>Maximum (-g3)</armgcccpp.compiler.optimization.DebugLevel>
+  <armgcccpp.compiler.warnings.AllWarnings>True</armgcccpp.compiler.warnings.AllWarnings>
+  <armgcccpp.linker.libraries.Libraries>
+    <ListValues>
+      <Value>libm</Value>
+    </ListValues>
+  </armgcccpp.linker.libraries.Libraries>
+  <armgcccpp.linker.libraries.LibrarySearchPaths>
+    <ListValues>
+      <Value>%24(ProjectDir)\Device_Startup</Value>
+    </ListValues>
+  </armgcccpp.linker.libraries.LibrarySearchPaths>
+  <armgcccpp.linker.optimization.GarbageCollectUnusedSections>True</armgcccpp.linker.optimization.GarbageCollectUnusedSections>
+  <armgcccpp.linker.miscellaneous.LinkerFlags>-Tsamd21e18a_flash.ld</armgcccpp.linker.miscellaneous.LinkerFlags>
+  <armgcccpp.assembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\arm\CMSIS\5.4.0\CMSIS\Core\Include\</Value>
+      <Value>%24(PackRepoDir)\atmel\SAMD21_DFP\1.3.395\samd21a\include</Value>
+    </ListValues>
+  </armgcccpp.assembler.general.IncludePaths>
+  <armgcccpp.assembler.debugging.DebugLevel>Default (-g)</armgcccpp.assembler.debugging.DebugLevel>
+  <armgcccpp.preprocessingassembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\arm\CMSIS\5.4.0\CMSIS\Core\Include\</Value>
+      <Value>%24(PackRepoDir)\atmel\SAMD21_DFP\1.3.395\samd21a\include</Value>
+    </ListValues>
+  </armgcccpp.preprocessingassembler.general.IncludePaths>
+  <armgcccpp.preprocessingassembler.debugging.DebugLevel>Default (-Wa,-g)</armgcccpp.preprocessingassembler.debugging.DebugLevel>
+</ArmGccCpp>
+    </ToolchainSettings>
+    <VisualMicroSettings>
+      <VisualMicroSettings>
+        <config.Debug.customdebug_Seeeduino_rolawan_debugger_type>universal</config.Debug.customdebug_Seeeduino_rolawan_debugger_type>
+        <ValidatedAS7>1</ValidatedAS7>
+        <config.Debug.customdebug_uno_debugger_type>universal</config.Debug.customdebug_uno_debugger_type>
+        <arduino.upload.port>COM26</arduino.upload.port>
+      </VisualMicroSettings>
+    </VisualMicroSettings>
+    <VMSETTING_IncludePaths>../../../Sketch1;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/cores/arduino;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/cores/arduino/avr;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/cores/arduino/libb64;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/cores/arduino/TinyUSB;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/cores/arduino/USB;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/variants/arduino_zero;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/cores/arduino/TinyUSB/Adafruit_TinyUSB_ArduinoCore;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/cores/arduino/TinyUSB/Adafruit_TinyUSB_ArduinoCore/tinyusb/src;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/CMSIS/Core/Include/;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/CMSIS/DSP/Include/;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS-Atmel/1.2.1/CMSIS-Atmel/CMSIS/Device/ATMEL/;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/4.8.3;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/4.8.3/arm-none-eabi;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/4.8.3/bits;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/sys;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/system;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/avr;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/usb;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/lib/gcc/arm-none-eabi/4.8.3/include;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/Device/ATMEL/samd21/include/component;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0../../CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/component;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0../../CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/instance;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0../../CMSIS-Atmel/1.1.0/CMSIS/Device/ATMEL/samd21/include/pio;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/Device/ATMEL/samd21/include;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/CMSIS/include;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/Device/ATMEL/samd21/include/instance;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/Device/ATMEL/samd21/include/pio;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0../../CMSIS-Atmel/1.1.0/CMSIS/Device/ATMEL/samd21/include/component;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0../../CMSIS-Atmel/1.1.0/CMSIS/Device/ATMEL/samd21/include/instance;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/7.2.1/tr1;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/lib/gcc/arm-none-eabi/7.2.1/include;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/7.2.1/arm-none-eabi;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/7.2.1;{vm.intellisense.add-paths};C:/Users/John/AppData/Local/arduino15/packages/arduino/hardware/avr/1.8.5/cores/arduino;C:/Users/John/AppData/Local/arduino15/packages/arduino/hardware/avr/1.8.5/variants/standard;C:/Users/John/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7//lib/gcc/avr/7.3.0/include;C:/Users/John/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include;C:/Users/John/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include-fixed;C:/Users/John/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr;C:/Users/John/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/lib/gcc/avr/4.9.2/include;C:/Users/John/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/lib/gcc/avr/4.9.3/include;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/libraries/FlashStorage/src;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/libraries/LoRaWan;C:/Users/John/Desktop/MAIN-B~1/Sketch1/Sketch1;C:/Users/John/Documents/Arduino/libraries/DS18B20/src;C:/Users/John/Documents/Arduino/libraries/OneWire;C:/Users/John/Desktop/DEVICES/WORKIN~1/MAIN-B~1/Sketch1/Sketch1;</VMSETTING_IncludePaths>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <ArmGccCpp>
+  <armgcc.common.outputfiles.hex>True</armgcc.common.outputfiles.hex>
+  <armgcc.common.outputfiles.lss>True</armgcc.common.outputfiles.lss>
+  <armgcc.common.outputfiles.eep>True</armgcc.common.outputfiles.eep>
+  <armgcc.common.outputfiles.bin>True</armgcc.common.outputfiles.bin>
+  <armgcc.common.outputfiles.srec>True</armgcc.common.outputfiles.srec>
+  <armgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>_VMDEBUG=1</Value>
+      <Value>ARDUINO=108013</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>F_CPU=48000000L</Value>
+      <Value>printf=iprintf</Value>
+      <Value>__SAMD__</Value>
+      <Value>ARDUINO_SEEED_LORAWAN</Value>
+      <Value>ARDUINO_ARCH_SAMD</Value>
+      <Value>__SAMD21G18A__</Value>
+      <Value>USB_VID=0x2886</Value>
+      <Value>USB_PID=0x800C</Value>
+      <Value>USBCON</Value>
+      <Value>USB_CONFIG_POWER=100</Value>
+      <Value>ARM_MATH_CM0PLUS</Value>
+      <Value>SEEEDUINO_LORAWAN</Value>
+      <Value>__SAMD21__</Value>
+    </ListValues>
+  </armgcc.compiler.symbols.DefSymbols>
+  <armgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>../../../Sketch1</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/libraries/FlashStorage/src</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/libraries/LoRaWan</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/cores/arduino</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/cores/arduino/avr</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/cores/arduino/libb64</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/cores/arduino/TinyUSB</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/cores/arduino/USB</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/variants/arduino_zero</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/cores/arduino/TinyUSB/Adafruit_TinyUSB_ArduinoCore</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/cores/arduino/TinyUSB/Adafruit_TinyUSB_ArduinoCore/tinyusb/src</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/CMSIS/Core/Include/</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/CMSIS/DSP/Include/</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS-Atmel/1.2.1/CMSIS-Atmel/CMSIS/Device/ATMEL/</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/4.8.3</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/4.8.3/arm-none-eabi</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/4.8.3/bits</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/sys</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/system</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/avr</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/usb</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/lib/gcc/arm-none-eabi/4.8.3/include</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/Device/ATMEL/samd21/include/component</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0../../CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/component</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0../../CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/instance</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0../../CMSIS-Atmel/1.1.0/CMSIS/Device/ATMEL/samd21/include/pio</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/Device/ATMEL/samd21/include</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/CMSIS/include</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/Device/ATMEL/samd21/include/instance</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/Device/ATMEL/samd21/include/pio</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0../../CMSIS-Atmel/1.1.0/CMSIS/Device/ATMEL/samd21/include/component</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0../../CMSIS-Atmel/1.1.0/CMSIS/Device/ATMEL/samd21/include/instance</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/7.2.1/tr1</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/lib/gcc/arm-none-eabi/7.2.1/include</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/7.2.1/arm-none-eabi</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/7.2.1</Value>
+      <Value>{vm.intellisense.add-paths}</Value>
+    </ListValues>
+  </armgcc.compiler.directories.IncludePaths>
+  <armgcc.compiler.optimization.level>Optimize debugging experience (-Og)</armgcc.compiler.optimization.level>
+  <armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+  <armgcc.compiler.optimization.DebugLevel>Maximum (-g3)</armgcc.compiler.optimization.DebugLevel>
+  <armgcc.compiler.warnings.AllWarnings>True</armgcc.compiler.warnings.AllWarnings>
+  <armgcccpp.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>_VMDEBUG=1</Value>
+      <Value>ARDUINO=108013</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>F_CPU=48000000L</Value>
+      <Value>printf=iprintf</Value>
+      <Value>__SAMD__</Value>
+      <Value>ARDUINO_SEEED_LORAWAN</Value>
+      <Value>ARDUINO_ARCH_SAMD</Value>
+      <Value>__SAMD21G18A__</Value>
+      <Value>USB_VID=0x2886</Value>
+      <Value>USB_PID=0x800C</Value>
+      <Value>USBCON</Value>
+      <Value>USB_CONFIG_POWER=100</Value>
+      <Value>ARM_MATH_CM0PLUS</Value>
+      <Value>SEEEDUINO_LORAWAN</Value>
+      <Value>__SAMD21__</Value>
+    </ListValues>
+  </armgcccpp.compiler.symbols.DefSymbols>
+  <armgcccpp.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>../../../Sketch1</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/libraries/FlashStorage/src</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/libraries/LoRaWan</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/cores/arduino</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/cores/arduino/avr</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/cores/arduino/libb64</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/cores/arduino/TinyUSB</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/cores/arduino/USB</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/variants/arduino_zero</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/cores/arduino/TinyUSB/Adafruit_TinyUSB_ArduinoCore</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/cores/arduino/TinyUSB/Adafruit_TinyUSB_ArduinoCore/tinyusb/src</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/CMSIS/Core/Include/</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/CMSIS/DSP/Include/</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS-Atmel/1.2.1/CMSIS-Atmel/CMSIS/Device/ATMEL/</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/4.8.3</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/4.8.3/arm-none-eabi</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/4.8.3/bits</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/sys</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/system</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/avr</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/usb</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/lib/gcc/arm-none-eabi/4.8.3/include</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/Device/ATMEL/samd21/include/component</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0../../CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/component</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0../../CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/instance</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0../../CMSIS-Atmel/1.1.0/CMSIS/Device/ATMEL/samd21/include/pio</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/Device/ATMEL/samd21/include</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/CMSIS/include</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/Device/ATMEL/samd21/include/instance</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/Device/ATMEL/samd21/include/pio</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0../../CMSIS-Atmel/1.1.0/CMSIS/Device/ATMEL/samd21/include/component</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0../../CMSIS-Atmel/1.1.0/CMSIS/Device/ATMEL/samd21/include/instance</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/7.2.1/tr1</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/lib/gcc/arm-none-eabi/7.2.1/include</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/7.2.1/arm-none-eabi</Value>
+      <Value>C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/7.2.1</Value>
+      <Value>{vm.intellisense.add-paths}</Value>
+    </ListValues>
+  </armgcccpp.compiler.directories.IncludePaths>
+  <armgcccpp.compiler.optimization.level>Optimize debugging experience (-Og)</armgcccpp.compiler.optimization.level>
+  <armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>
+  <armgcccpp.compiler.optimization.DebugLevel>Maximum (-g3)</armgcccpp.compiler.optimization.DebugLevel>
+  <armgcccpp.compiler.warnings.AllWarnings>True</armgcccpp.compiler.warnings.AllWarnings>
+  <armgcccpp.linker.libraries.Libraries>
+    <ListValues>
+      <Value>libm</Value>
+    </ListValues>
+  </armgcccpp.linker.libraries.Libraries>
+  <armgcccpp.linker.libraries.LibrarySearchPaths>
+    <ListValues>
+      <Value>%24(ProjectDir)\Device_Startup</Value>
+    </ListValues>
+  </armgcccpp.linker.libraries.LibrarySearchPaths>
+  <armgcccpp.linker.optimization.GarbageCollectUnusedSections>True</armgcccpp.linker.optimization.GarbageCollectUnusedSections>
+  <armgcccpp.linker.miscellaneous.LinkerFlags>-Tsamd21e18a_flash.ld</armgcccpp.linker.miscellaneous.LinkerFlags>
+  <armgcccpp.assembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\arm\CMSIS\5.4.0\CMSIS\Core\Include\</Value>
+      <Value>%24(PackRepoDir)\atmel\SAMD21_DFP\1.3.395\samd21a\include</Value>
+    </ListValues>
+  </armgcccpp.assembler.general.IncludePaths>
+  <armgcccpp.assembler.debugging.DebugLevel>Default (-g)</armgcccpp.assembler.debugging.DebugLevel>
+  <armgcccpp.preprocessingassembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\arm\CMSIS\5.4.0\CMSIS\Core\Include\</Value>
+      <Value>%24(PackRepoDir)\atmel\SAMD21_DFP\1.3.395\samd21a\include</Value>
+    </ListValues>
+  </armgcccpp.preprocessingassembler.general.IncludePaths>
+  <armgcccpp.preprocessingassembler.debugging.DebugLevel>Default (-Wa,-g)</armgcccpp.preprocessingassembler.debugging.DebugLevel>
+</ArmGccCpp>
+    </ToolchainSettings>
+    <VisualMicroSettings>
+      <VisualMicroSettings>
+        <config.Debug.customdebug_Seeeduino_rolawan_debugger_type>universal</config.Debug.customdebug_Seeeduino_rolawan_debugger_type>
+        <ValidatedAS7>1</ValidatedAS7>
+        <config.Debug.customdebug_uno_debugger_type>universal</config.Debug.customdebug_uno_debugger_type>
+        <arduino.upload.port>COM26</arduino.upload.port>
+      </VisualMicroSettings>
+    </VisualMicroSettings>
+    <VMSETTING_IncludePaths>../../../Sketch1;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/cores/arduino;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/cores/arduino/avr;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/cores/arduino/libb64;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/cores/arduino/TinyUSB;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/cores/arduino/USB;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/variants/arduino_zero;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/cores/arduino/TinyUSB/Adafruit_TinyUSB_ArduinoCore;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/cores/arduino/TinyUSB/Adafruit_TinyUSB_ArduinoCore/tinyusb/src;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/CMSIS/Core/Include/;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/CMSIS/DSP/Include/;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS-Atmel/1.2.1/CMSIS-Atmel/CMSIS/Device/ATMEL/;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/4.8.3;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/4.8.3/arm-none-eabi;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/4.8.3/bits;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/sys;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/system;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/avr;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/usb;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/lib/gcc/arm-none-eabi/4.8.3/include;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/Device/ATMEL/samd21/include/component;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0../../CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/component;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0../../CMSIS-Atmel/1.2.0/CMSIS/Device/ATMEL/samd21/include/instance;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0../../CMSIS-Atmel/1.1.0/CMSIS/Device/ATMEL/samd21/include/pio;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/Device/ATMEL/samd21/include;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/CMSIS/include;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/Device/ATMEL/samd21/include/instance;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/Device/ATMEL/samd21/include/pio;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0../../CMSIS-Atmel/1.1.0/CMSIS/Device/ATMEL/samd21/include/component;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/CMSIS/5.4.0../../CMSIS-Atmel/1.1.0/CMSIS/Device/ATMEL/samd21/include/instance;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/7.2.1/tr1;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/lib/gcc/arm-none-eabi/7.2.1/include;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/7.2.1/arm-none-eabi;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/7.2.1;{vm.intellisense.add-paths};C:/Users/John/AppData/Local/arduino15/packages/arduino/hardware/avr/1.8.5/cores/arduino;C:/Users/John/AppData/Local/arduino15/packages/arduino/hardware/avr/1.8.5/variants/standard;C:/Users/John/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7//lib/gcc/avr/7.3.0/include;C:/Users/John/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include;C:/Users/John/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include-fixed;C:/Users/John/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr;C:/Users/John/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/lib/gcc/avr/4.9.2/include;C:/Users/John/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/lib/gcc/avr/4.9.3/include;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/libraries/FlashStorage/src;C:/Users/John/AppData/Local/arduino15/packages/Seeeduino/hardware/samd/1.8.1/libraries/LoRaWan;C:/Users/John/Desktop/MAIN-B~1/Sketch1/Sketch1;C:/Users/John/Documents/Arduino/libraries/DS18B20/src;C:/Users/John/Documents/Arduino/libraries/OneWire;C:/Users/John/Desktop/DEVICES/WORKIN~1/MAIN-B~1/Sketch1/Sketch1;</VMSETTING_IncludePaths>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="lib\Config\Config.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\Config\Config.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\DS18B20\src\DS18B20.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\DS18B20\src\DS18B20.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\Encoder\Encoder.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\Encoder\Encoder.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\EnergySave\EnergySave.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\EnergySave\EnergySave.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\FastADC\AnalogReadFast.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\FFT\src\arduinoFFT.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\FFT\src\arduinoFFT.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\FFT\src\defs.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\FFT\src\types.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\FixFTT\src\fix_fft.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\FixFTT\src\fix_fft.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\GPS\GPS.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\GPS\GPS.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\Network\Network.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\Network\Network.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\OneWire\OneWire.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\OneWire\OneWire.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\RTCZero\RTCZero.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\RTCZero\RTCZero.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\Sensors\Sensors.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\Sensors\Sensors.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\Sound\Sound.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\Sound\Sound.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\TinyGPS\TinyGPS.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\TinyGPS\TinyGPS.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Parameters.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Sketch1.ino">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="__vm\.Sketch1.vsarduino.h">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="lib\" />
+    <Folder Include="lib\Config\" />
+    <Folder Include="lib\DS18B20\" />
+    <Folder Include="lib\DS18B20\src\" />
+    <Folder Include="lib\Encoder\" />
+    <Folder Include="lib\EnergySave\" />
+    <Folder Include="lib\FastADC\" />
+    <Folder Include="lib\FFT\" />
+    <Folder Include="lib\FFT\src\" />
+    <Folder Include="lib\FixFTT\" />
+    <Folder Include="lib\FixFTT\src\" />
+    <Folder Include="lib\GPS\" />
+    <Folder Include="lib\Network\" />
+    <Folder Include="lib\OneWire\" />
+    <Folder Include="lib\RTCZero\" />
+    <Folder Include="lib\Sensors\" />
+    <Folder Include="lib\Sound\" />
+    <Folder Include="lib\TinyGPS\" />
+    <Folder Include="__vm\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lib\README">
+      <SubType>compile</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>
